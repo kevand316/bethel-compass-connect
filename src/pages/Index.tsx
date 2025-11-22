@@ -116,11 +116,11 @@ const Index = () => {
       </section>
 
       {/* Highlight Services Section */}
-      <section className="bg-background py-20">
+      <section className="bg-[hsl(222,47%,11%)] py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold">What's Included With Your Housing</h2>
-            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+            <h2 className="mb-4 text-4xl font-bold text-white">What's Included With Your Housing</h2>
+            <p className="mx-auto max-w-2xl text-lg text-white/80">
               Everything you need for a comfortable, supportive living experience
             </p>
           </div>
@@ -131,7 +131,7 @@ const Index = () => {
               return (
                 <div
                   key={service.title}
-                  className="group overflow-hidden rounded-lg border bg-card transition-all duration-300 hover:shadow-lg"
+                  className="group overflow-hidden rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:bg-white/10"
                   style={{
                     animation: `fade-in 0.5s ease-out ${index * 0.1}s backwards`,
                   }}
@@ -150,8 +150,8 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
+                    <h3 className="mb-2 text-xl font-semibold text-white">{service.title}</h3>
+                    <p className="text-sm text-white/70">{service.description}</p>
                   </div>
                 </div>
               );
