@@ -100,7 +100,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg"
-              className="w-full sm:w-auto"
+              className="w-full px-12 py-8 text-2xl sm:w-auto"
             >
               <Link to="/contact">Refer a Resident</Link>
             </Button>
@@ -108,7 +108,7 @@ const Index = () => {
               asChild 
               variant="outline" 
               size="lg"
-              className="w-full border-2 border-white bg-white/10 text-white backdrop-blur-sm hover:bg-white/20 sm:w-auto"
+              className="w-full px-12 py-8 text-2xl border-2 border-white bg-white/10 text-white backdrop-blur-sm hover:bg-white/20 sm:w-auto"
             >
               <Link to="/partnerships">Partner With Us</Link>
             </Button>
