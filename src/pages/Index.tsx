@@ -28,9 +28,8 @@ const Index = () => {
           </p>
 
           {/* Mission Statement */}
-          <p className="mx-auto mb-12 max-w-2xl font-serif text-lg italic text-muted-foreground md:text-xl">
-            "To come along side individuals who are struggling to find safe, secure & quality housing 
-            while experiencing a loving, supportive, judgement-free environment leading to an abundant life"
+          <p className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground md:text-xl">
+            We are dedicated to providing safe, supportive, and affordable housing solutions for individuals in need of all-inclusive communal living. Our mission is to create family style homes where residents can thrive, regain stability, and build a brighter future.
           </p>
 
           {/* CTAs */}
