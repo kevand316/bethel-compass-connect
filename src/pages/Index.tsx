@@ -71,7 +71,7 @@ const Index = () => {
       >
         <div className="mx-auto max-w-4xl text-center">
           {/* Logo */}
-          <div className="mb-16 -mt-1 flex animate-fade-in justify-center">
+          <div className="mb-16 -mt-[9px] flex animate-fade-in justify-center">
             <img 
               src={bethelLogo} 
               alt="Bethel Residency Logo" 
@@ -80,7 +80,7 @@ const Index = () => {
           </div>
 
           {/* Company Name */}
-          <h1 className="mb-4 mt-5 animate-fade-in text-4xl font-bold text-white md:text-5xl lg:text-6xl [animation-delay:0.2s]">
+          <h1 className="mb-4 mt-[70px] animate-fade-in text-4xl font-bold text-white md:text-5xl lg:text-6xl [animation-delay:0.2s]">
             Bethel Residency
           </h1>
 
