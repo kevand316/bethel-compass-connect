@@ -24,7 +24,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img src={bethelLogo} alt="Bethel Residency" className="h-10 w-10 drop-shadow-md" />
-            <span className="hidden text-xl font-semibold md:inline">Bethel</span>
+            <span className="hidden text-xl font-semibold md:inline">Bethel Residency</span>
           </Link>
 
           {/* Desktop Navigation */}

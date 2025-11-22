@@ -69,7 +69,7 @@ const Index = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroImage})`,
         }}
       >
-        <div className="mx-auto max-w-4xl text-center mt-[25px]">
+        <div className="mx-auto max-w-4xl text-center mt-[50px]">
           {/* Logo */}
           <div className="mb-16 -mt-[9px] flex animate-fade-in justify-center">
             <img 
