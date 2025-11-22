@@ -9,6 +9,7 @@ import careSupport from "@/assets/care-support.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Home, Utensils, Heart, Users, Clock, Pill, Car, Network, DollarSign, Briefcase, Calculator, FileText } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Index = () => {
   const highlightServices = [
@@ -162,64 +163,86 @@ const Index = () => {
       {/* Daily Care Services */}
       <section className="bg-muted/30 py-20">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
+          <div className="mb-8 text-center">
             <h2 className="mb-4 text-3xl font-bold">Daily Care & Operations</h2>
             <p className="mx-auto max-w-2xl text-muted-foreground">
               Comprehensive support services to help you thrive every day
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {dailyCareServices.map((service) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={service.title}
-                  className="flex flex-col items-center rounded-lg border bg-card p-6 text-center transition-all hover:shadow-md"
-                >
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                    <Icon className="h-7 w-7 text-primary" />
-                  </div>
-                  <h3 className="mb-2 font-semibold">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+          <Accordion type="single" collapsible className="mx-auto max-w-4xl">
+            <AccordionItem value="daily-care" className="border rounded-lg bg-card px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                View All Daily Care Services
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="grid gap-6 pt-4 md:grid-cols-2">
+                  {dailyCareServices.map((service) => {
+                    const Icon = service.icon;
+                    return (
+                      <div
+                        key={service.title}
+                        className="flex items-start gap-3"
+                      >
+                        <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                          <Icon className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="mb-1 font-semibold">{service.title}</h3>
+                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
-          </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
       {/* Supportive Services */}
       <section className="bg-background py-20">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
+          <div className="mb-8 text-center">
             <h2 className="mb-4 text-3xl font-bold">Supportive Services</h2>
             <p className="mx-auto max-w-2xl text-muted-foreground">
               Building skills and connections for long-term stability
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
-            {supportiveServices.map((service) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={service.title}
-                  className="flex flex-col items-center rounded-lg border bg-card p-6 text-center transition-all hover:shadow-md"
-                >
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                    <Icon className="h-7 w-7 text-primary" />
-                  </div>
-                  <h3 className="mb-2 font-semibold">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+          <Accordion type="single" collapsible className="mx-auto max-w-4xl">
+            <AccordionItem value="supportive-services" className="border rounded-lg bg-card px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                View All Supportive Services
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="grid gap-6 pt-4 md:grid-cols-2">
+                  {supportiveServices.map((service) => {
+                    const Icon = service.icon;
+                    return (
+                      <div
+                        key={service.title}
+                        className="flex items-start gap-3"
+                      >
+                        <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                          <Icon className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="mb-1 font-semibold">{service.title}</h3>
+                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
-          </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
-          <div className="mt-12 text-center">
+          <div className="mt-8 text-center">
             <Button asChild size="lg" variant="outline">
-              <Link to="/services">View All Services</Link>
+              <Link to="/services">View Full Services Page</Link>
             </Button>
           </div>
         </div>
