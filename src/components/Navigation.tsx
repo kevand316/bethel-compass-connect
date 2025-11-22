@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={bethelLogo} alt="Bethel Residency" className="h-10 w-10" />
+            <img src={bethelLogo} alt="Bethel Residency" className="h-10 w-10 drop-shadow-md" />
             <span className="hidden text-xl font-semibold md:inline">Bethel</span>
           </Link>
 
