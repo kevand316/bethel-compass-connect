@@ -64,14 +64,14 @@ const Index = () => {
 
       {/* Hero Section with Background Image */}
       <section 
-        className="relative flex min-h-[90vh] items-center justify-center bg-cover bg-center bg-no-repeat px-4 py-20"
+        className="relative flex min-h-[90vh] items-start justify-center bg-cover bg-center bg-no-repeat px-4 pt-8 pb-20"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroImage})`,
         }}
       >
         <div className="mx-auto max-w-4xl text-center">
           {/* Logo */}
-          <div className="mb-8 flex animate-fade-in justify-center">
+          <div className="mb-12 flex animate-fade-in justify-center">
             <img 
               src={bethelLogo} 
               alt="Bethel Residency Logo" 
@@ -236,17 +236,11 @@ const Index = () => {
                     );
                   })}
                 </div>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-
-          <div className="mt-8 text-center">
-            <Button asChild size="lg" variant="outline">
-              <Link to="/services">View Full Services Page</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  </section>
 
       {/* Stats Section */}
       <section className="bg-muted/50 py-16">
