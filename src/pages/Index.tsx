@@ -248,9 +248,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-3">
             <div className="text-center">
-              <div className="mb-2 text-5xl font-bold text-primary">100+</div>
-              <p className="text-lg font-medium text-white">Beds Available</p>
-              <p className="text-sm text-white/70">Across five homes</p>
+              <div className="mb-2 text-5xl font-bold text-primary">8+</div>
+              <p className="text-lg font-medium text-white">Homes</p>
+              <p className="text-sm text-white/70">100+ beds available</p>
             </div>
             <div className="text-center">
               <div className="mb-2 text-5xl font-bold text-primary">10+</div>
