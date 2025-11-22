@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import bethelLogo from "@/assets/bethel-logo.png";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center">
         <div className="mx-auto max-w-4xl">
@@ -52,6 +55,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
