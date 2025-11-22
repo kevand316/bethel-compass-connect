@@ -80,7 +80,7 @@ const Index = () => {
           </div>
 
           {/* Company Name */}
-          <h1 className="mb-4 mt-[120px] animate-fade-in text-4xl font-bold text-white md:text-5xl lg:text-6xl [animation-delay:0.2s]">
+          <h1 className="mb-4 mt-[120px] animate-fade-in text-4xl font-bold text-white drop-shadow-2xl md:text-5xl lg:text-6xl [animation-delay:0.2s]">
             Bethel Residency
           </h1>
 
