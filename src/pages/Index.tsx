@@ -202,22 +202,22 @@ const Index = () => {
       </section>
 
       {/* Supportive Services */}
-      <section className="bg-background py-20">
+      <section className="bg-[hsl(222,47%,11%)] py-12">
         <div className="container mx-auto px-4">
-          <div className="mb-8 text-center">
-            <h2 className="mb-4 text-3xl font-bold">Supportive Services</h2>
-            <p className="mx-auto max-w-2xl text-muted-foreground">
+          <div className="mb-6 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-white">Supportive Services</h2>
+            <p className="mx-auto max-w-2xl text-white/80">
               Building skills and connections for long-term stability
             </p>
           </div>
 
           <Accordion type="single" collapsible className="mx-auto max-w-4xl">
-            <AccordionItem value="supportive-services" className="border rounded-lg bg-card px-6">
-              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+            <AccordionItem value="supportive-services" className="border-white/20 rounded-lg bg-white/5 backdrop-blur-sm px-6">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:no-underline hover:text-white/90">
                 View All Supportive Services
               </AccordionTrigger>
               <AccordionContent>
-                <div className="grid gap-6 pt-4 md:grid-cols-2">
+                <div className="grid gap-4 pt-2 md:grid-cols-2">
                   {supportiveServices.map((service) => {
                     const Icon = service.icon;
                     return (
@@ -225,12 +225,12 @@ const Index = () => {
                         key={service.title}
                         className="flex items-start gap-3"
                       >
-                        <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                        <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/20">
                           <Icon className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                          <h3 className="mb-1 font-semibold">{service.title}</h3>
-                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                          <h3 className="mb-1 font-semibold text-white">{service.title}</h3>
+                          <p className="text-sm text-white/70">{service.description}</p>
                         </div>
                       </div>
                     );
@@ -243,23 +243,23 @@ const Index = () => {
   </section>
 
       {/* Stats Section */}
-      <section className="bg-muted/50 py-16">
+      <section className="bg-[hsl(222,47%,11%)] py-12 border-t border-white/10">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-3">
             <div className="text-center">
               <div className="mb-2 text-5xl font-bold text-primary">100+</div>
-              <p className="text-lg font-medium">Beds Available</p>
-              <p className="text-sm text-muted-foreground">Across five homes</p>
+              <p className="text-lg font-medium text-white">Beds Available</p>
+              <p className="text-sm text-white/70">Across five homes</p>
             </div>
             <div className="text-center">
               <div className="mb-2 text-5xl font-bold text-primary">10+</div>
-              <p className="text-lg font-medium">Years of Service</p>
-              <p className="text-sm text-muted-foreground">Since 2013</p>
+              <p className="text-lg font-medium text-white">Years of Service</p>
+              <p className="text-sm text-white/70">Since 2013</p>
             </div>
             <div className="text-center">
               <div className="mb-2 text-5xl font-bold text-primary">24/7</div>
-              <p className="text-lg font-medium">On-Site Support</p>
-              <p className="text-sm text-muted-foreground">Always here for you</p>
+              <p className="text-lg font-medium text-white">On-Site Support</p>
+              <p className="text-sm text-white/70">Always here for you</p>
             </div>
           </div>
         </div>
