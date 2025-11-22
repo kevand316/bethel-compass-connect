@@ -22,7 +22,7 @@ const Index = () => {
     {
       icon: Utensils,
       title: "Daily Meals & Kitchen",
-      description: "Equipped kitchens and daily meals prepared by certified food handlers",
+      description: "Equipped kitchens and optional meal plans prepared by certified food handlers",
       image: kitchen,
     },
     {
@@ -41,7 +41,7 @@ const Index = () => {
 
   const dailyCareServices = [
     { icon: Clock, title: "24/7 Live-In Manager", description: "Round-the-clock on-site support" },
-    { icon: Utensils, title: "Daily Meals", description: "Prepared by certified food handlers" },
+    { icon: Utensils, title: "Meal Plans Available", description: "Optional daily meals prepared by certified food handlers" },
     { icon: Pill, title: "Medication Reminders", description: "Ensuring you stay on track" },
     { icon: Car, title: "Transportation", description: "To medical appointments and grocery" },
     { icon: Pill, title: "Medication Pick-Ups", description: "We help coordinate your prescriptions" },
