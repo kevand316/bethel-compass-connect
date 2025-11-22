@@ -75,7 +75,8 @@ const Index = () => {
             <img 
               src={bethelLogo} 
               alt="Bethel Residency Logo" 
-              className="h-48 w-48 object-contain drop-shadow-2xl opacity-95 md:h-64 md:w-64"
+              className="h-48 w-48 object-contain opacity-85 md:h-64 md:w-64"
+              style={{ filter: 'drop-shadow(0 0 30px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 60px rgba(0, 0, 0, 0.7))' }}
             />
           </div>
 
