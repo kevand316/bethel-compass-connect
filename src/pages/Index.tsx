@@ -71,7 +71,7 @@ const Index = () => {
       >
         <div className="mx-auto max-w-4xl text-center mt-[80px]">
           {/* Logo */}
-          <div className="mb-16 -mt-[9px] flex animate-fade-in justify-center">
+          <div className="mb-16 -mt-[34px] flex animate-fade-in justify-center">
             <img 
               src={bethelLogo} 
               alt="Bethel Residency Logo" 
