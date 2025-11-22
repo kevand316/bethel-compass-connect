@@ -131,7 +131,7 @@ const Index = () => {
               return (
                 <div
                   key={service.title}
-                  className="group overflow-hidden rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:bg-white/10"
+                  className="group overflow-hidden rounded-lg border border-white/20 bg-white transition-all duration-300 hover:shadow-lg"
                   style={{
                     animation: `fade-in 0.5s ease-out ${index * 0.1}s backwards`,
                   }}
@@ -150,8 +150,8 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="mb-2 text-xl font-semibold text-white">{service.title}</h3>
-                    <p className="text-sm text-white/70">{service.description}</p>
+                    <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
+                    <p className="text-sm text-muted-foreground">{service.description}</p>
                   </div>
                 </div>
               );
