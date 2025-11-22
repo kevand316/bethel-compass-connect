@@ -161,22 +161,22 @@ const Index = () => {
       </section>
 
       {/* Daily Care Services */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-[hsl(222,47%,11%)] py-12">
         <div className="container mx-auto px-4">
-          <div className="mb-8 text-center">
-            <h2 className="mb-4 text-3xl font-bold">Daily Care & Operations</h2>
-            <p className="mx-auto max-w-2xl text-muted-foreground">
+          <div className="mb-6 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-white">Daily Care & Operations</h2>
+            <p className="mx-auto max-w-2xl text-white/80">
               Comprehensive support services to help you thrive every day
             </p>
           </div>
 
           <Accordion type="single" collapsible className="mx-auto max-w-4xl">
-            <AccordionItem value="daily-care" className="border rounded-lg bg-card px-6">
-              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+            <AccordionItem value="daily-care" className="border-white/20 rounded-lg bg-white/5 backdrop-blur-sm px-6">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:no-underline hover:text-white/90">
                 View All Daily Care Services
               </AccordionTrigger>
               <AccordionContent>
-                <div className="grid gap-6 pt-4 md:grid-cols-2">
+                <div className="grid gap-4 pt-2 md:grid-cols-2">
                   {dailyCareServices.map((service) => {
                     const Icon = service.icon;
                     return (
@@ -184,12 +184,12 @@ const Index = () => {
                         key={service.title}
                         className="flex items-start gap-3"
                       >
-                        <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                        <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/20">
                           <Icon className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                          <h3 className="mb-1 font-semibold">{service.title}</h3>
-                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                          <h3 className="mb-1 font-semibold text-white">{service.title}</h3>
+                          <p className="text-sm text-white/70">{service.description}</p>
                         </div>
                       </div>
                     );
