@@ -8,14 +8,14 @@ import laundry from "@/assets/laundry.jpg";
 import careSupport from "@/assets/care-support.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Home, Utensils, Heart, Briefcase } from "lucide-react";
+import { Home, Utensils, Heart, Users, Clock, Pill, Car, Network, DollarSign, Briefcase, Calculator, FileText } from "lucide-react";
 
 const Index = () => {
-  const services = [
+  const highlightServices = [
     {
       icon: Home,
       title: "Fully Furnished Housing",
-      description: "Spacious, comfortable rooms with all utilities, appliances, and bedding included",
+      description: "Shared rooms with two beds, all utilities, appliances, and bedding included",
       image: furnishedRoom,
     },
     {
@@ -36,6 +36,25 @@ const Index = () => {
       description: "On-site management, medication reminders, transportation, and case management",
       image: careSupport,
     },
+  ];
+
+  const dailyCareServices = [
+    { icon: Clock, title: "24/7 Live-In Manager", description: "Round-the-clock on-site support" },
+    { icon: Utensils, title: "Daily Meals", description: "Prepared by certified food handlers" },
+    { icon: Pill, title: "Medication Reminders", description: "Ensuring you stay on track" },
+    { icon: Car, title: "Transportation", description: "To medical appointments and grocery" },
+    { icon: Pill, title: "Medication Pick-Ups", description: "We help coordinate your prescriptions" },
+    { icon: Users, title: "IHSS Worker", description: "If applicable for your needs" },
+    { icon: Network, title: "Social Programs", description: "Connections to community resources" },
+    { icon: Heart, title: "Mental Health Referrals", description: "Outpatient support connections" },
+  ];
+
+  const supportiveServices = [
+    { icon: Home, title: "Long-Term Housing Linkages", description: "Connecting to permanent housing" },
+    { icon: FileText, title: "Section 8 Assistance", description: "Application help for Riverside County" },
+    { icon: Calculator, title: "Credit Repair & Financial Literacy", description: "Build your financial future" },
+    { icon: Briefcase, title: "Job Readiness", description: "Resume, interview prep, job search" },
+    { icon: DollarSign, title: "Money Management", description: "Budgeting and financial planning" },
   ];
 
   return (
@@ -95,7 +114,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Highlight Services Section */}
       <section className="bg-background py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
@@ -106,7 +125,7 @@ const Index = () => {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((service, index) => {
+            {highlightServices.map((service, index) => {
               const Icon = service.icon;
               return (
                 <div
@@ -137,10 +156,70 @@ const Index = () => {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Daily Care Services */}
+      <section className="bg-muted/30 py-20">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold">Daily Care & Operations</h2>
+            <p className="mx-auto max-w-2xl text-muted-foreground">
+              Comprehensive support services to help you thrive every day
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {dailyCareServices.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.title}
+                  className="flex flex-col items-center rounded-lg border bg-card p-6 text-center transition-all hover:shadow-md"
+                >
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
+                    <Icon className="h-7 w-7 text-primary" />
+                  </div>
+                  <h3 className="mb-2 font-semibold">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Supportive Services */}
+      <section className="bg-background py-20">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold">Supportive Services</h2>
+            <p className="mx-auto max-w-2xl text-muted-foreground">
+              Building skills and connections for long-term stability
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+            {supportiveServices.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.title}
+                  className="flex flex-col items-center rounded-lg border bg-card p-6 text-center transition-all hover:shadow-md"
+                >
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
+                    <Icon className="h-7 w-7 text-primary" />
+                  </div>
+                  <h3 className="mb-2 font-semibold">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                </div>
+              );
+            })}
+          </div>
 
           <div className="mt-12 text-center">
             <Button asChild size="lg" variant="outline">
-              <Link to="/our-homes">View All Amenities</Link>
+              <Link to="/services">View All Services</Link>
             </Button>
           </div>
         </div>
