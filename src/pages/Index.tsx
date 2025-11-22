@@ -75,7 +75,7 @@ const Index = () => {
             <img 
               src={bethelLogo} 
               alt="Bethel Residency Logo" 
-              className="h-48 w-48 object-contain drop-shadow-2xl md:h-64 md:w-64"
+              className="h-48 w-48 object-contain drop-shadow-2xl opacity-95 md:h-64 md:w-64"
             />
           </div>
 
