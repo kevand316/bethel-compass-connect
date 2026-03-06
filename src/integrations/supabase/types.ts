@@ -56,6 +56,7 @@ export type Database = {
           phone: string | null
           tags: string[] | null
           updated_at: string | null
+          user_id: string | null
         }
         Insert: {
           county?: string | null
@@ -68,6 +69,7 @@ export type Database = {
           phone?: string | null
           tags?: string[] | null
           updated_at?: string | null
+          user_id?: string | null
         }
         Update: {
           county?: string | null
@@ -80,6 +82,7 @@ export type Database = {
           phone?: string | null
           tags?: string[] | null
           updated_at?: string | null
+          user_id?: string | null
         }
         Relationships: []
       }
